@@ -34,7 +34,7 @@ class Rsvp_mcp {
 		$this->EE->cp->set_right_nav(array(
 			'rsvp_events' => BASE.AMP.RSVP_CP.AMP.'method=events',
 			'preferences' => BASE.AMP.RSVP_CP.AMP.'method=settings',
-			'documentation' => $this->EE->cp->masked_url('http://cx-addons.com/docs/rsvp'),
+			'documentation' => $this->EE->cp->masked_url('http://github.com/expressodev/rsvp'),
 		));
 	}
 
