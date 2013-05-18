@@ -144,6 +144,11 @@ Displays a form which allows users to respond to events. You will get a basic fo
 
 ## Changelog
 
+### RSVP 1.2.3
+*Released May 18, 2013*
+
+* Fixed `channel_model` not loaded automatically in ExpressionEngine 2.6
+
 ### RSVP 1.2.2
 *Released January 26, 2013*
 

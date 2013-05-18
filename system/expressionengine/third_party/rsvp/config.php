@@ -4,7 +4,7 @@ if ( ! defined('RSVP_NAME'))
 {
 	define('RSVP_NAME', 'RSVP');
 	define('RSVP_CLASS', 'Rsvp');
-	define('RSVP_VERSION', '1.2.2');
+	define('RSVP_VERSION', '1.2.3');
 	define('RSVP_DOCS', 'https://github.com/expressodev/rsvp');
 }
 

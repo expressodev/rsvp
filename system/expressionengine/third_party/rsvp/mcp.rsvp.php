@@ -102,6 +102,7 @@ class Rsvp_mcp {
 		}
 
 		// check events channel has been set
+		$this->EE->load->model('channel_model');
 		$channel_info = $this->EE->channel_model->get_channel_info($this->EE->rsvp_config->item('rsvp_channel_id'));
 		if ($channel_info->num_rows() == 0)
 		{
@@ -161,6 +162,7 @@ class Rsvp_mcp {
 		}
 
 		// load existing settings data
+		$this->EE->load->model('channel_model');
 		$channels = array('s', array(0 => ''), 0);
 		$channels_query = $this->EE->channel_model->get_channels()->result_array();
 		foreach ($channels_query as $channel)
