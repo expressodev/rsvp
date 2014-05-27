@@ -90,7 +90,7 @@ class Rsvp_mcp {
 
 	function events()
 	{
-		$this->EE->cp->set_variable('cp_page_title', lang('rsvp_events'));
+		$this->EE->view->cp_page_title =  lang('rsvp_events');
 
 		// get pagination
 		$rownum = (int)$this->EE->input->get('rownum');
@@ -131,7 +131,7 @@ class Rsvp_mcp {
 
 	function settings()
 	{
-		$this->EE->cp->set_variable('cp_page_title', lang('preferences'));
+		$this->EE->view->cp_page_title =  lang('preferences');
 		$data = array('post_url' => RSVP_CP.AMP.'method=settings');
 
 		// check for submitted form
