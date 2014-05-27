@@ -5,7 +5,7 @@
 
 	$this->table->add_row(lang('event_entry_id'), $event['entry_id']);
 	$this->table->add_row(lang('event_title'), $event['title']);
-	$this->table->add_row(lang('event_date'), $this->localize->set_human_time($event['entry_date']));
+	$this->table->add_row(lang('event_date'), $this->localize->human_time($event['entry_date']));
 	$this->table->add_row(lang('event_seats_available'), $event['total_seats'] == 0 ? 'unlimited' : $event['total_seats']);
 	$this->table->add_row(lang('event_seats_reserved'),
 			sprintf(lang('event_seats_reserved_format'),
