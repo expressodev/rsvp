@@ -222,7 +222,7 @@ class Rsvp_mcp {
 
 		// load view
 		$this->EE->cp->set_breadcrumb(BASE.AMP.RSVP_CP.AMP.'method=events', lang('rsvp_events'));
-		$this->EE->cp->set_variable('cp_page_title', $data['event']['title']);
+		$this->EE->view->cp_page_title =  lang('cp_page_title', $data['event']['title']);
 		return $this->EE->load->view('event_details', $data, TRUE);
 	}
 
